@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:shopping_app/screens/homepage.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class OnBoardingPage extends StatefulWidget {
   @override
@@ -38,7 +39,10 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     const bodyStyle = TextStyle(fontSize: 19.0);
 
     const pageDecoration = const PageDecoration(
-      titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
+      titleTextStyle: TextStyle(
+        fontSize: 28.0,
+        fontWeight: FontWeight.w700,
+      ),
       bodyTextStyle: bodyStyle,
       descriptionPadding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
       pageColor: Colors.white,
@@ -70,7 +74,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       ),
       pages: [
         PageViewModel(
-          title: "Fractional shares",
+          title: "Learn",
           body:
               "Instead of having to buy an entire share, invest any amount you want.",
           image: _buildImage('img1.jpg'),
